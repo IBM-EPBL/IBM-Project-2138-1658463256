@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ntJobRecommender
+spec:
+  selector:
+    matchLabels:
+      app: ntJobRecommender
+  template:
+    metadata:
+      labels:
+        app: ntJobRecommender
+    spec:
+      containers:
+      - name: nginx
+        image: ntJobRecommender:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
