@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IBM Project</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+<h1 class="head">Customer Care Registry</h1>
+    <div class="login">
+
+        <h1 class="text-center">Login Here!</h1>
+
+        <form action="{{url_for('agentlogin')}}",method="POST">
+            <div class="form-group ">
+                <label class="form-label" for="email">Email address</label>
+                <input class="form-control" type="email">
+
+            </div>
+            <div class="form-group ">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" >
+
+            </div>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-label" for="check">Remember me</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-dark btn-block" type="button">SIGN IN</button>
+            <h3 class=reg>Don't have an account?<a href="/templates/agentreg.html">Register here</a></h3>
+        </form>
+
+    </div>
+
+  </body>
+</html>
