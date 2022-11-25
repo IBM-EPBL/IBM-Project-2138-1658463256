@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register here</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  </head>
+  <body>
+    
+    <div class="Register">
+
+        <h1 class="text-center">Register Here!</h1>
+
+        <form action="{{url_for('userreg')}}",method="POST">
+            <div class="form-group ">
+                <label class="form-label" for="email" >Email address</label>
+                <input class="form-control" type="email" name="mail">
+
+            </div>
+            <div class="form-group ">
+                <label class="form-label" for="name" >Name</label>
+                <input class="form-control" type="name" name="name">
+
+            </div>
+            <div class="form-group ">
+                <label class="form-label" for="number" >Phone Number</label>
+                <input class="form-control" type="number" name="num">
+
+            </div>
+            <div class="form-group ">
+                <label class="form-label" for="password" >Password</label>
+                <input class="form-control" type="password" name="pas">
+
+            </div>
+
+            <button id="btn" class="w-100 btn btn-lg btn-dark btn-block" type="submit">SIGN UP</button>
+            <h3 class=log>Already have an account?<a href="index.html">Login here</a></h3>
+        </form>
+
+    </div>
+
+  </body>
+</html>
